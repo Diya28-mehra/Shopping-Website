@@ -16,7 +16,10 @@ connectcloudinary()
 
 //Middleware 
 app.use(express.json())
-app.use(cors());
+app.use(cors({
+  origin: '*',
+  credentials: true,
+}));
 
 //API endPoints
 app.use('/api/user',userRouter)
