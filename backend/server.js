@@ -26,4 +26,4 @@ app.use('/api/order',orderRouter)
 
 app.get('/', (req, res) => res.status(200).send('API Working!'));
 
-app.listen(port,()=>console.log(`Listening on localhost:${port}`))
+export default app;
